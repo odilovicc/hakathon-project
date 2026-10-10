@@ -1,0 +1,373 @@
+.savings-intro {
+  max-width: 70ch;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: -8px 0 28px;
+}
+.museum-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+.museum-summary > svg {
+  color: var(--iris);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+.museum-summary p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+.museum-summary strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.6vw, 32px);
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+.museum-summary small {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 12px;
+  margin-top: 8px;
+}
+.museum-summary > div {
+  min-width: 0;
+}
+.museum-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.museum-exhibit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px 4px 24px 24px;
+  box-shadow: var(--shadow-warm);
+  min-width: 0;
+}
+.museum-exhibit-new {
+  border-color: var(--iris);
+}
+.exhibit-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ink-soft);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 14px;
+}
+.museum-exhibit h2 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.exhibit-price {
+  font-size: 21px;
+  margin: 10px 0 6px;
+  overflow-wrap: anywhere;
+}
+.exhibit-category {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+.exhibit-time {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 12px 0;
+  margin-bottom: auto;
+}
+.exhibit-offer {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+  color: var(--iris);
+}
+.saving-transfer-action {
+  max-width: 100%;
+}
+.saving-transfer-action > button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.saving-transfer-action svg {
+  flex-shrink: 0;
+}
+.transfer-done {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--positive-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.transfer-done svg {
+  flex-shrink: 0;
+}
+.savings-feedback {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid var(--iris);
+  background: var(--iris-soft);
+  margin: 24px 0;
+}
+.savings-feedback > div:last-child {
+  min-width: 0;
+}
+.savings-feedback p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.savings-feedback p > svg {
+  flex-shrink: 0;
+}
+.savings-feedback blockquote {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.savings-feedback small,
+.savings-feedback strong {
+  display: block;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.savings-feedback a {
+  margin-top: 10px;
+}
+.subscription-summary {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.subscription-summary > div {
+  flex: 1;
+  min-width: 0;
+}
+.subscription-summary dt {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.subscription-summary dd {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 26px);
+  overflow-wrap: anywhere;
+}
+.subscription-note {
+  font-size: 12px;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  max-width: 75ch;
+  margin: 22px 0 32px;
+}
+.subscription-group {
+  margin: 20px 0;
+}
+.subscription-group > h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.subscription-group > h2 span {
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  margin-left: 8px;
+}
+.subscription-list {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.subscription-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+}
+.subscription-row + .subscription-row {
+  border-top: 1px solid var(--line);
+}
+.subscription-info h3 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.subscription-info p {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 7px;
+}
+.subscription-price {
+  text-align: right;
+  max-width: 260px;
+}
+.subscription-price strong {
+  font-size: 19px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.subscription-price span {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 12px;
+  margin-top: 6px;
+}
+.subscription-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-column: 1 / -1;
+}
+.subscription-actions button {
+  font-size: 13px;
+  padding: 9px 16px;
+}
+.subscription-detail {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+.unused-saving {
+  color: var(--clay-deep);
+}
+.cancelled-saving {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+@media (max-width: 720px) {
+  .museum-gallery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .museum-exhibit {
+    padding: 16px;
+  }
+  .museum-summary {
+    gap: 16px;
+  }
+  .subscription-summary {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .subscription-summary > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .subscription-summary dt {
+    margin: 0;
+    max-width: 50%;
+  }
+  .subscription-summary dd {
+    font-size: 19px;
+    text-align: right;
+  }
+  .subscription-row {
+    padding: 16px;
+    gap: 16px;
+  }
+  .subscription-price {
+    max-width: 150px;
+  }
+  .subscription-price strong {
+    font-size: 16px;
+  }
+  .savings-feedback {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .museum-exhibit {
+    padding: 20px;
+  }
+  .museum-summary > svg {
+    display: none;
+  }
+  .subscription-row {
+    padding: 16px;
+  }
+  .subscription-info h3 {
+    font-size: 15px;
+  }
+  .subscription-price {
+    max-width: 125px;
+  }
+}
+
+.subscription-help {
+  margin: 8px 0 16px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.subscription-help summary {
+  min-height: 44px;
+  padding: 12px 0;
+}
+.subscription-help p {
+  max-width: 75ch;
+  margin-bottom: 8px;
+}
+.subscription-status {
+  grid-column: 1 / -1;
+}
+.subscription-status select {
+  min-height: 44px;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-2);
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 16px;
+}
+.saving-confirmation {
+  font-size: 13px;
+  line-height: 1.6;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.saving-confirmation p {
+  margin-bottom: 10px;
+}
+.saving-confirmation > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

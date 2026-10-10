@@ -1,0 +1,29 @@
+{
+  "name": "kubyshka",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c \"#B94E25,#5B4BD1\" \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client && npm run build -w server",
+    "seed": "npm run seed -w server",
+    "typecheck": "npm run typecheck -w client && npm run typecheck -w server",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "npm run test -w server"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.33.1"
+  }
+}
